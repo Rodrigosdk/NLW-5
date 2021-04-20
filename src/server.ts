@@ -1,7 +1,7 @@
 import express from 'express';
-import {home} from './router/home'
+import router from './router'
 const app = express();
 
-app.get('/',home)
+app.get('/', router)
 
 app.listen(3333, () => console.log('server online'));
