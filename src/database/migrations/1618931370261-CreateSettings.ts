@@ -15,7 +15,7 @@ export class CreateSettings1618931370261 implements MigrationInterface {
                 type: "varchar"
             },
             {
-                name: "chate",
+                name: "chat",
                 type: "boolean",
                 default: true
             },
