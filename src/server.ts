@@ -1,5 +1,8 @@
 import express from 'express';
-import router from './router'
+
+import router from './router';
+import './database';
+
 const app = express();
 
 app.get('/', router)
