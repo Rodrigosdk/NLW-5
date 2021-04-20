@@ -1,9 +1,11 @@
 import { Router} from 'express';
 
-import {home} from './controller/home';
+import {SettingsController} from './controller/settingController';
 
-const router = Router();
+const routers = Router();
 
-router.get('/', home)
+const settingsController = new SettingsController()
 
-export default router
+routers.post('/settings', settingsController.create)
+
+export {routers}
