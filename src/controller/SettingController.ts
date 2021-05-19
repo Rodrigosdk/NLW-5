@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 
-import { SettingsServices } from "./../services/SettingsServices";
+import { SettingsServices } from "../services/SettingsServices";
 
 class SettingsController {
   public async create(request: Request, response: Response) {
