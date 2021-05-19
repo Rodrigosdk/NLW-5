@@ -5,7 +5,7 @@ import './database';
 
 class App {
     public app: express.Application;
-    public routes: Routes = new Routes();
+    private routes: Routes = new Routes();
 
     constructor() {
         this.app = express();
@@ -13,7 +13,7 @@ class App {
         this.routes.router(this.app);
     }
 
-    private middlewares(): void {
+    private middlewares(){
         this.app.use(express.json());
     }
 }

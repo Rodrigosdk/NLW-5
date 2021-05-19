@@ -3,7 +3,7 @@ import { Request, Response } from "express";
 import { SettingsServices } from "./../services/SettingsServices";
 
 class SettingsController {
-  async create(request: Request, response: Response) {
+  public async create(request: Request, response: Response) {
     const { chat, userName } = request.body;
 
     const settingsServices = new SettingsServices();
