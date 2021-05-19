@@ -18,7 +18,7 @@ export class Menssages{
     @Column()
     user_id: string;
 
-    @UpdateDateColumn()
+    @Column()
     text: string;
 
     @UpdateDateColumn()
