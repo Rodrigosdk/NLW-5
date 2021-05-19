@@ -1,7 +1,7 @@
 import { Entity, Column, UpdateDateColumn, PrimaryColumn } from 'typeorm'
 import { v4 as uuid } from 'uuid'
 
-@Entity("user")
+@Entity("users")
 export class User {
     @PrimaryColumn()
     id: string;

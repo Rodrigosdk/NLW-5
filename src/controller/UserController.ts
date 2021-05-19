@@ -8,13 +8,8 @@ export class UserController {
 
         const usersServices = new UsersServices();
 
-        try {
-            const user = await usersServices.create(email);
-            return response.json(user);
-        } catch (error) {
-            return response.status(400).json({
-                menssage: error.menssage,
-            });
-        }
+        const user = await usersServices.create(email);
+        
+        return response.json(user);
     }
 }
