@@ -8,7 +8,7 @@ export class Setting{
     id: String;
     
     @Column()
-    username: string;
+    userName: string;
     
     @Column()
     chat: boolean;

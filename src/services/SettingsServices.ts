@@ -3,15 +3,15 @@ import { SettingRepository } from "../repository/SettingRepository";
 
 interface ISettingsCreate {
   chat: boolean;
-  username: string;
+  userName: string;
 }
 
 class SettingsServices {
-  async create({ chat, username }: ISettingsCreate) {
+  async create({ chat, userName }: ISettingsCreate) {
     const settingRepository = getCustomRepository(SettingRepository);
 
     const userAlreadyExists = await settingRepository.findOne({
-      username,
+      userName,
     });
 
     if (userAlreadyExists) {
@@ -20,7 +20,7 @@ class SettingsServices {
 
     const settings = settingRepository.create({
       chat,
-      username,
+      userName,
     });
 
     await settingRepository.save(settings);
