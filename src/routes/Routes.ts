@@ -4,7 +4,7 @@ import { SettingsController } from '../controller/SettingController';
 import { UserController } from '../controller/UserController';
 import { MenssageController } from '../controller/MenssageController';
 
-export class A {
+export class Routes {
     private settingsController: SettingsController = new SettingsController();
     private userController: UserController = new UserController();
     private menssageController: MenssageController = new MenssageController();
